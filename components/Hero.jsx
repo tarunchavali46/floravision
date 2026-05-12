@@ -29,7 +29,7 @@ export default function Hero() {
       }}
     >
       <div
-        className='relative w-full max-w-[480px] mx-auto overflow-hidden rounded-[30px] md:rounded-[36px]'
+        className='relative w-full max-w-[460px] mx-auto overflow-hidden rounded-[30px] md:rounded-[36px]'
         style={{
           background:
             'linear-gradient(to bottom, rgba(10,22,10,0.97), rgba(4,12,4,0.98))',
@@ -92,7 +92,7 @@ export default function Hero() {
 
         {/* hero content */}
         <div className='relative z-10 px-4 sm:px-5 pt-8 md:pt-10'>
-          <h1 className='font-serif text-white text-[38px] md:text-[56px] leading-[0.88] tracking-tight max-w-[210px] md:max-w-[280px]'>
+          <h1 className='font-serif text-white text-[38px] md:text-[56px] leading-[0.88] tracking-[-0.04em] max-w-[210px] md:max-w-[280px]'>
             Earth&apos;s Exhale
           </h1>
 
@@ -124,9 +124,9 @@ export default function Hero() {
         <div
           className='absolute right-2 md:right-5 top-[195px] md:top-[180px] z-20 w-[110px] md:w-[165px] rounded-[20px] md:rounded-[24px] px-3 md:px-5 py-3 md:py-4'
           style={{
-            background: 'rgba(20,34,20,0.55)',
+            background: 'rgba(18,30,18,0.62)',
             border: '1px solid rgba(255,255,255,0.06)',
-            backdropFilter: 'blur(18px)',
+            backdropFilter: 'blur(22px)',
           }}
         >
           <p className='mb-2 text-[9px] md:text-[11px] text-white/70'>
@@ -148,7 +148,7 @@ export default function Hero() {
           style={{
             background: 'rgba(35,45,35,0.42)',
             border: '1px solid rgba(255,255,255,0.05)',
-            backdropFilter: 'blur(20px)',
+            backdropFilter: 'blur(26px)',
           }}
         >
           <div className='flex items-center gap-2 mb-2'>
