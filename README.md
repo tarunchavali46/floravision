@@ -1,44 +1,34 @@
-# FloraVision 🌿
+# FloraVision
 
-A modern and responsive plant store landing page built using Next.js and Tailwind CSS.
+Modern responsive plant store landing page built with Next.js and Tailwind CSS.
 
----
-
-## 🚀 Live Demo
+## Live Demo
 
 https://floravision-rho.vercel.app/
 
----
-
-## 📂 GitHub Repository
+## GitHub Repository
 
 https://github.com/tarunchavali46/floravision
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Next.js
 - React.js
 - Tailwind CSS
-- Lucide React Icons
+- Lucide React
 
----
+## Features
 
-## ✨ Features
-
-- Fully responsive layout
-- Mobile-friendly navigation
-- Modern glassmorphism UI
-- Reusable React components
-- Interactive hover animations
-- Responsive product cards
+- Responsive design
+- Mobile navigation menu
+- Reusable components
+- Modern UI
+- Hover animations
+- Product cards
 - Customer review section
-- Optimized image handling using Next.js Image component
+- Optimized images
 
----
-
-## 📁 Project Structure
+## Folder Structure
 
 ```bash
 app/
@@ -47,9 +37,7 @@ public/
 lib/
 ```
 
----
-
-## ⚙️ Installation & Setup
+## Installation
 
 Clone the repository:
 
@@ -69,29 +57,18 @@ Run development server:
 npm run dev
 ```
 
-Open in browser:
+Open:
 
 ```bash
 http://localhost:3000
 ```
 
----
+## Responsive Support
 
-## 📱 Responsive Design
-
-Optimized for:
 - Mobile
 - Tablet
 - Desktop
 
----
-
-## 📌 Notes
-
-This project was developed as part of a frontend internship assignment based on the provided Figma design.
-
----
-
-## 👨‍💻 Author
+## Author
 
 Chavali Tarun Venkata Phani Raju
