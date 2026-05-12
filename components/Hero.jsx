@@ -19,6 +19,7 @@ function Stars() {
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <section
       className='min-h-screen flex justify-center px-2 sm:px-4 py-3 sm:py-6 overflow-hidden'
@@ -51,23 +52,6 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* mobile menu */}
-          {menuOpen && (
-            <div
-               className='absolute top-[70px] left-1/2 -translate-x-1/2 z-30 w-[90%] rounded-2xl p-5 flex flex-col gap-4 text-white text-sm md:hidden'
-               style={{
-                 background: 'rgba(14,25,14,0.95)',
-                 border: '1px solid rgba(255,255,255,0.06)',
-                 backdropFilter: 'blur(18px)',
-               }}
-             >
-               <span>Home</span>
-               <span>Plant Type</span>
-               <span>More</span>
-               <span>Contact</span>
-             </div>
-           )}
-
           {/* desktop nav */}
           <div className='hidden lg:flex items-center gap-5 text-[10px] text-white/80'>
             <span>Home</span>
@@ -86,11 +70,29 @@ export default function Hero() {
             >
               ☰
             </button>
+          </div>
         </div>
+
+        {/* mobile menu */}
+        {menuOpen && (
+          <div
+            className='absolute top-[70px] left-1/2 -translate-x-1/2 z-30 w-[90%] rounded-2xl p-5 flex flex-col gap-4 text-white text-sm md:hidden'
+            style={{
+              background: 'rgba(14,25,14,0.95)',
+              border: '1px solid rgba(255,255,255,0.06)',
+              backdropFilter: 'blur(18px)',
+            }}
+          >
+            <span>Home</span>
+            <span>Plant Type</span>
+            <span>More</span>
+            <span>Contact</span>
+          </div>
+        )}
 
         {/* hero content */}
         <div className='relative z-10 px-4 sm:px-5 pt-8 md:pt-10'>
-          <h1 className='font-serif text-white text-[42px] md:text-[58px] leading-[0.88] tracking-tight max-w-[210px] md:max-w-[280px]'>
+          <h1 className='font-serif text-white text-[38px] md:text-[56px] leading-[0.88] tracking-tight max-w-[210px] md:max-w-[280px]'>
             Earth&apos;s Exhale
           </h1>
 
@@ -120,7 +122,7 @@ export default function Hero() {
 
         {/* floating product card */}
         <div
-          className='absolute right-2 md:right-5 top-[205px] md:top-[180px] z-20 w-[120px] md:w-[175px] rounded-[20px] md:rounded-[24px] px-3 md:px-5 py-3 md:py-4'
+          className='absolute right-2 md:right-5 top-[195px] md:top-[180px] z-20 w-[110px] md:w-[165px] rounded-[20px] md:rounded-[24px] px-3 md:px-5 py-3 md:py-4'
           style={{
             background: 'rgba(20,34,20,0.55)',
             border: '1px solid rgba(255,255,255,0.06)',
@@ -142,7 +144,7 @@ export default function Hero() {
 
         {/* review card */}
         <div
-          className='absolute left-3 md:left-5 top-[420px] md:top-[360px] z-20 w-[110px] md:w-[150px] rounded-[18px] md:rounded-[22px] p-2 md:p-3'
+          className='absolute left-3 md:left-5 top-[390px] md:top-[360px] z-20 w-[105px] md:w-[150px] rounded-[18px] md:rounded-[22px] p-2 md:p-3'
           style={{
             background: 'rgba(35,45,35,0.42)',
             border: '1px solid rgba(255,255,255,0.05)',
@@ -176,7 +178,7 @@ export default function Hero() {
 
         {/* main plant */}
         <div className='relative z-10 flex justify-center mt-6 md:-mt-8'>
-          <div className='relative w-[210px] h-[210px] md:w-[330px] md:h-[330px]'>
+          <div className='relative w-[230px] h-[230px] md:w-[330px] md:h-[330px]'>
             <Image
               src='/images/plant1.png'
               alt='main plant'
