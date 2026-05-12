@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 
 function Stars() {
   return (
@@ -17,6 +18,7 @@ function Stars() {
 }
 
 export default function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <section
       className='min-h-screen flex justify-center px-2 sm:px-4 py-3 sm:py-6 overflow-hidden'
@@ -49,6 +51,23 @@ export default function Hero() {
             </p>
           </div>
 
+          {/* mobile menu */}
+          {menuOpen && (
+            <div
+               className='absolute top-[70px] left-1/2 -translate-x-1/2 z-30 w-[90%] rounded-2xl p-5 flex flex-col gap-4 text-white text-sm md:hidden'
+               style={{
+                 background: 'rgba(14,25,14,0.95)',
+                 border: '1px solid rgba(255,255,255,0.06)',
+                 backdropFilter: 'blur(18px)',
+               }}
+             >
+               <span>Home</span>
+               <span>Plant Type</span>
+               <span>More</span>
+               <span>Contact</span>
+             </div>
+           )}
+
           {/* desktop nav */}
           <div className='hidden lg:flex items-center gap-5 text-[10px] text-white/80'>
             <span>Home</span>
@@ -60,8 +79,13 @@ export default function Hero() {
           {/* icons */}
           <div className='flex items-center gap-4 text-white'>
             <span className='text-sm'>⌕</span>
-            <span className='text-[20px]'>☰</span>
-          </div>
+
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className='text-[20px]'
+            >
+              ☰
+            </button>
         </div>
 
         {/* hero content */}

@@ -37,7 +37,7 @@ export default function PlantCard({ plant }) {
 
   return (
     <div
-      className='group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl'
+      className='group overflow-hidden rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.45)]'
       style={{
         backgroundColor: '#162016',
         border: '1px solid rgba(255,255,255,0.06)',
@@ -49,14 +49,17 @@ export default function PlantCard({ plant }) {
           src={plant.image}
           alt={plant.name}
           fill
-          className='object-cover transition-transform duration-500 group-hover:scale-105'
+          className='object-cover transition-transform duration-700 group-hover:scale-110'
           sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
         />
+
+        {/* overlay */}
+        <div className='absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100' />
       </div>
 
       {/* content */}
       <div className='p-4'>
-        <h3 className='mb-1.5 text-sm font-medium text-white'>
+        <h3 className='mb-1.5 text-sm font-medium text-white transition-colors duration-300 group-hover:text-green-300'>
           {plant.name}
         </h3>
 
@@ -80,7 +83,7 @@ export default function PlantCard({ plant }) {
 
           <button
             onClick={handleBuy}
-            className='flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium text-white transition-all duration-300 hover:scale-105'
+            className='flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium text-white transition-all duration-300 hover:scale-105 active:scale-95'
             style={{
               backgroundColor: added ? '#388e3c' : '#4caf50',
             }}
