@@ -44,7 +44,6 @@ https://github.com/tarunchavali46/floravision
 app/
 components/
 public/
-  images/
 lib/
 ```
 
@@ -80,11 +79,10 @@ http://localhost:3000
 
 ## 📱 Responsive Design
 
-The application is optimized for:
-
-- Mobile devices
-- Tablets
-- Desktop screens
+Optimized for:
+- Mobile
+- Tablet
+- Desktop
 
 ---
 
