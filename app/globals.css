@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #0f1a0f;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* tailwind wasnt applying font-serif properly so forcing it here */
+.font-serif {
+  font-family: 'Playfair Display', serif !important;
+}
+
+img {
+  display: block;
+}
