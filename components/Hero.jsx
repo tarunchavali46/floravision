@@ -96,29 +96,29 @@ export default function Hero() {
 
         {/* floating product card */}
         <div
-          className='absolute right-2 md:right-5 top-[240px] md:top-[170px] z-20 w-[145px] md:w-[200px] rounded-[22px] md:rounded-[26px] px-4 md:px-6 py-4 md:py-5'
+          className='absolute right-2 md:right-5 top-[205px] md:top-[180px] z-20 w-[120px] md:w-[175px] rounded-[20px] md:rounded-[24px] px-3 md:px-5 py-3 md:py-4'
           style={{
             background: 'rgba(20,34,20,0.55)',
             border: '1px solid rgba(255,255,255,0.06)',
             backdropFilter: 'blur(18px)',
           }}
         >
-          <p className='mb-2 text-[10px] md:text-xs text-white/70'>
+          <p className='mb-2 text-[9px] md:text-[11px] text-white/70'>
             Indoor Plant
           </p>
 
-          <h3 className='mb-4 text-[13px] md:text-[17px] leading-5 md:leading-6 text-white'>
+          <h3 className='mb-3 text-[11px] md:text-[15px] leading-5 text-white'>
             Aglaonema plant
           </h3>
 
-          <button className='rounded-lg border border-white/20 px-4 py-2 text-xs md:text-sm text-white'>
+          <button className='rounded-lg border border-white/20 px-3 md:px-4 py-2 text-[10px] md:text-sm text-white'>
             Buy Now
           </button>
         </div>
 
         {/* review card */}
         <div
-          className='absolute left-3 md:left-5 top-[500px] md:top-[350px] z-20 w-[120px] md:w-[150px] rounded-[20px] p-2 md:p-3'
+          className='absolute left-3 md:left-5 top-[420px] md:top-[360px] z-20 w-[110px] md:w-[150px] rounded-[18px] md:rounded-[22px] p-2 md:p-3'
           style={{
             background: 'rgba(35,45,35,0.42)',
             border: '1px solid rgba(255,255,255,0.05)',
@@ -126,7 +126,7 @@ export default function Hero() {
           }}
         >
           <div className='flex items-center gap-2 mb-2'>
-            <div className='overflow-hidden rounded-full w-7 h-7 md:w-9 md:h-9'>
+            <div className='overflow-hidden rounded-full w-6 h-6 md:w-9 md:h-9'>
               <Image
                 src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80'
                 alt='customer'
@@ -137,7 +137,7 @@ export default function Hero() {
             </div>
 
             <div>
-              <p className='text-[9px] md:text-[11px] text-white whitespace-nowrap'>
+              <p className='text-[8px] md:text-[11px] text-white whitespace-nowrap'>
                 Rosie Harold
               </p>
 
@@ -145,14 +145,14 @@ export default function Hero() {
             </div>
           </div>
 
-          <p className='text-[8px] md:text-[10px] leading-4 text-white/45'>
+          <p className='text-[7px] md:text-[10px] leading-4 text-white/45'>
             Very beautiful plant. Delivery was smooth and packaging was excellent.
           </p>
         </div>
 
         {/* main plant */}
         <div className='relative z-10 flex justify-center mt-6 md:-mt-8'>
-          <div className='relative w-[220px] h-[220px] md:w-[330px] md:h-[330px]'>
+          <div className='relative w-[210px] h-[210px] md:w-[330px] md:h-[330px]'>
             <Image
               src='/images/plant1.png'
               alt='main plant'
@@ -164,7 +164,7 @@ export default function Hero() {
         </div>
 
         {/* trendy title */}
-        <div className='relative z-10 text-center -mt-2 md:-mt-6'>
+        <div className='relative z-10 text-center -mt-1 md:-mt-6'>
           <h2 className='text-white text-[16px] md:text-[18px] font-medium'>
             Our Trendy plants
           </h2>
