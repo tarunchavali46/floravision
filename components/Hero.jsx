@@ -64,7 +64,7 @@ export default function Hero() {
 
         {/* hero content */}
         <div className='relative z-10 px-4 sm:px-5 pt-8 sm:pt-10'>
-          <h1 className='font-serif text-white text-[42px] sm:text-[58px] leading-[0.88] tracking-tight max-w-[240px] sm:max-w-[280px]'>
+          <h1 className='font-serif text-white text-[42px] md:text-[58px] leading-[0.88] tracking-tight max-w-[240px] sm:max-w-[280px]'>
             Earth&apos;s Exhale
           </h1>
 
