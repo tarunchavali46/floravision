@@ -94,7 +94,7 @@ export default function Hero() {
 
         {/* floating product card */}
         <div
-          className='absolute right-1 sm:right-3 top-[260px] sm:top-[170px] z-20 w-[145px] sm:w-[200px] rounded-[22px] sm:rounded-[26px] px-4 sm:px-6 py-4 sm:py-5'
+          className='absolute right-1 sm:right-3 top-[260px] sm:top-[170px] z-20 w-[130px] sm:w-[200px] rounded-[22px] sm:rounded-[26px] px-4 sm:px-6 py-4 sm:py-5'
           style={{
             background: 'rgba(20,34,20,0.55)',
             border: '1px solid rgba(255,255,255,0.06)',
@@ -116,7 +116,7 @@ export default function Hero() {
 
         {/* review card */}
         <div
-          className='absolute left-3 sm:left-5 top-[470px] sm:top-[350px] z-20 w-[145px] sm:w-[150px] rounded-[24px] p-4'
+          className='absolute left-3 sm:left-5 top-[540px] sm:top-[350px] z-20 w-[145px] sm:w-[150px] rounded-[24px] p-3'
           style={{
             background: 'rgba(35,45,35,0.45)',
             border: '1px solid rgba(255,255,255,0.06)',
